@@ -56,7 +56,27 @@ header, section, article, footer{
     }
 }
 
-@media screen and (max-width: 970px){
+@media screen and (max-width: 980px){
+    .conteiner{
+        grid-template-areas: 
+            'header header header header header header'
+            'sec1   sec1   sec1   sec1   sec1   sec1'
+            'sec2   sec2   sec2   sec2   sec2   sec2'
+            'sec3   sec3   sec3   sec3   sec3   sec3'
+            'art1   art1   art1   art1   art1   art1'
+            'art2   art2   art2   art2   art2   art2'
+            'footer footer footer footer footer footer'
+        ;
+    } 
+    header, section, article, footer{
+        border: 3px solid darkgreen;
+        background-color: lightgreen;
+        color: darkgreen;
+           
+    }
+}
+
+@media screen and (max-width: 720px){
     .conteiner{
         grid-template-areas: 
             'header header '
@@ -75,3 +95,14 @@ header, section, article, footer{
            
     }
 }
+
+@media print{
+    
+    header, section, article, footer{
+        border: 3px solid #333;
+        background-color: #bbb;
+        color: black;
+           
+    }
+}
+
