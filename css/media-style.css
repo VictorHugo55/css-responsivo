@@ -99,8 +99,8 @@ header, section, article, footer{
 @media print{
     
     header, section, article, footer{
-        border: 3px solid #333;
-        background-color: #bbb;
+        border: 3px solid #444;
+        background-color: #444;
         color: black;
            
     }
